@@ -10,9 +10,19 @@
   font-style: normal;
 }
 
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
     background-color: rgb(248, 245, 240);
-    font-family: serif;
+}
+
+p {
+    font-family: "EB Garamond", serif;
 }
 
 header {
@@ -117,6 +127,7 @@ nav a:hover {
 .album-specs ol {
     font-size: 18px;
     text-decoration: none;
+    font-family: "EB Garamond", serif;    
 }
 
 .album-actions {
@@ -144,6 +155,28 @@ nav a:hover {
     max-width: 50ch;
     min-width: 14ch;
     margin: 15px
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-item {
+    border: solid red 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--base-color);
+}
+.grid-item img {
+    width: 390px;
+    height: 390px;
+    object-fit: cover;
+}
+.grid-item .content {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .order {
