@@ -177,7 +177,6 @@ nav a:hover {
     object-fit: cover;
 }
 .grid-item .content {
-    display: flex;
     justify-content: space-evenly;
 }
 
